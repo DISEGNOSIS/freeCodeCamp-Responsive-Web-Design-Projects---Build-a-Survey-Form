@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #D8BFD8;
+    margin: 0;
+    height: 0;
+    width: 100%;
+	height: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1px 22px;
+}
+
+section {
+    background: rgba(255,255,255,.5);
+    width: 96%;
+    margin: 13px auto 22px;
+    padding: 13px 22px;
+    border-radius: 13px;
+    -moz-box-shadow: 3px 3px 6px #999;
+    -webkit-box-shadow: 3px 3px 6px #999;
+    box-shadow: 3px 3px 6px #999;
+}
+
+h1 {
+    color: #fff;
+    font-size: 2.2em;
+    line-height: 0.5em;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px #777;
+}
+
+
+p {
+    color: #333;
+    text-align: center;
+    font-weight: 800;
+}
+
+a {
+    color: #A18AA1;
+}
+
+footer {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #A18AA1;
+    padding: 1px 22px;
+    height: 33px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    color: #333;
+    text-align: right;
+    padding-right: 6px;
+}
+
+input, select, textarea {
+    color: #333;
+    background: #eee;
+    border: 1px solid #cecece;
+    margin: 13px auto;
+    height: 33px;
+}
+
+textarea {
+    height: 99px;
+}
+
+button {
+    color: #fff;
+    font-size: 1.3em;
+    background: #A18AA1;
+    border-radius: 9px;
+    text-shadow: 1px 1px 2px #333;
+    padding: 3px 22px;
+    cursor: pointer;
+}
+
+button:hover {
+    font-style: italic;
+    background: #8FBC8B;
+}
+
+input:valid {
+    border: 2px solid #8FBC8B;
+}
+
+input:invalid {
+    border: 2px solid #C70039;
+}
+
+
+@media (max-width: 430px) {
+    h1 {
+        font-size: 1.7em;
+    }
+
+    label {
+        text-align: center;
+    }
+}
+
+@media (max-width: 380px) {
+    h1 {
+        font-size: 1.5em;
+    }
+}

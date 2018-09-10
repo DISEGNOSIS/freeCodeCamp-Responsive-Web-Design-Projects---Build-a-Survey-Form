@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <header>
+        <h1 id="title">Ask for your Quote</h1>
+      </header>
+      <main>
+        <section>
+            <p id="description">Compelte this form to receive an estimate:</p>
+            <form id="survey-form" action="" method="POST">
+                <div class="field">
+                    <label id="name-label" for="name">Name: </label>
+                    <input id="name" type="text" name="name" placeholder="Enter your name" required />
+                </div>
+                <div class="field">
+                    <label id="email-label" for="email">Email: </label>
+                    <input id="email" type="email" name="email" placeholder="Enter your Email" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" required />
+                </div>
+                <label for="">Do you need to modify your content?</label>
+                    <div class="field">
+                        <label for="yes">
+                            <input id="yes" type="radio" name="content" value="yes" /> Yes
+                        </label>
+                        <label for="no">
+                            <input id="no" type="radio" name="content" value="no" /> No
+                        </label>
+                        <label for="dontknow">
+                            <input id="dontknow" type="radio" name="content" value="dontknow" /> Don't know
+                        </label>
+                    </div>
+                    <label for="dropdown">Which type of website do you want?</label>
+                    <div class="field">
+                    <select id="dropdown" name="website" required>
+                        <option disabled selected>Choose the type</option>
+                        <option value="html5">HTML5</option>
+                        <option value="joomla">Joomla!</option>
+                        <option value="laravel">Laravel</option>
+                    </select>
+                </div>
+
+                <label id="number-label" for="number">How many images do you need?</label>
+                <input id="number" type="number" name="number" placeholder="Enter the amount of images you need" min="1" max="1000" pattern="[0-9]" required /><br />
+                <label for="info">Additional information:</label>
+                <textarea id="info" name="" cols="30" rows="10"></textarea><br />
+                <button id="submit" type="submit">Send</button>
+            </form>
+        </section>
+      </main>
+      <footer>
+        <a href="https://www.disegnosis.com.ar" target="_blank">
+            <img src="https://www.diseñowebs.com.ar/freecodecamp/responsive-web-design-projects/tribute-page/img/disegnosis.png" alt="Diseño Web DISEGNOSIS - Webmaster Diseño de Páginas / Sitios Web. Servicios de Hosting, Streaming y Mailing." />
+        </a>
+      </footer>
+</body>
+</html>
